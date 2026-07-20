@@ -30,7 +30,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 4,
@@ -41,7 +46,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 5,
@@ -52,7 +62,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 6,
@@ -63,7 +78,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 7,
@@ -74,7 +94,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 8,
@@ -85,7 +110,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 9,
@@ -96,7 +126,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 10,
@@ -107,7 +142,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 11,
@@ -140,7 +180,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 14,
@@ -151,7 +196,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 15,
@@ -162,7 +212,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 16,
@@ -173,7 +228,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 17,
@@ -184,7 +244,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 18,
@@ -195,7 +260,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 19,
@@ -206,7 +276,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 20,
@@ -217,7 +292,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 21,
@@ -250,7 +330,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 24,
@@ -261,7 +346,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 25,
@@ -272,7 +362,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 26,
@@ -283,7 +378,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 27,
@@ -294,7 +394,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 28,
@@ -305,7 +410,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 29,
@@ -316,7 +426,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 30,
@@ -327,7 +442,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 31,
@@ -360,7 +480,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 34,
@@ -371,7 +496,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 35,
@@ -382,7 +512,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 36,
@@ -393,7 +528,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 37,
@@ -404,7 +544,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 38,
@@ -415,7 +560,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 39,
@@ -426,7 +576,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 40,
@@ -437,7 +592,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 41,
@@ -470,7 +630,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 44,
@@ -481,7 +646,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 45,
@@ -492,7 +662,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 46,
@@ -503,7 +678,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 47,
@@ -514,7 +694,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 48,
@@ -525,7 +710,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 49,
@@ -536,7 +726,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 50,
@@ -547,7 +742,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 51,
@@ -580,7 +780,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 54,
@@ -591,7 +796,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 55,
@@ -602,7 +812,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 56,
@@ -613,7 +828,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 57,
@@ -624,7 +844,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 58,
@@ -635,7 +860,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 59,
@@ -646,7 +876,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 60,
@@ -657,7 +892,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 61,
@@ -690,7 +930,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 64,
@@ -701,7 +946,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 65,
@@ -712,7 +962,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 66,
@@ -723,7 +978,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 67,
@@ -734,7 +994,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 68,
@@ -745,7 +1010,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 69,
@@ -756,7 +1026,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 70,
@@ -767,7 +1042,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 71,
@@ -800,7 +1080,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 74,
@@ -811,7 +1096,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 75,
@@ -822,7 +1112,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 76,
@@ -833,7 +1128,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 77,
@@ -844,7 +1144,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 78,
@@ -855,7 +1160,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 79,
@@ -866,7 +1176,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 80,
@@ -877,7 +1192,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 81,
@@ -910,7 +1230,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 84,
@@ -921,7 +1246,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 85,
@@ -932,7 +1262,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 86,
@@ -943,7 +1278,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 87,
@@ -954,7 +1294,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 88,
@@ -965,7 +1310,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 89,
@@ -976,7 +1326,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 90,
@@ -987,7 +1342,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 91,
@@ -1020,7 +1380,12 @@ export const vocabData = [
     "sentenceMeaning": "我現在正在吃飯。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "먹어요",
+      "먹었습니다",
+      "먹을 거예요"
+    ]
   },
   {
     "id": 94,
@@ -1031,7 +1396,12 @@ export const vocabData = [
     "sentenceMeaning": "必須多喝水。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "마셔요",
+      "마셨습니다",
+      "마실 거예요"
+    ]
   },
   {
     "id": 95,
@@ -1042,7 +1412,12 @@ export const vocabData = [
     "sentenceMeaning": "昨天太晚睡了。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "자요",
+      "잤습니다",
+      "잘 거예요"
+    ]
   },
   {
     "id": 96,
@@ -1053,7 +1428,12 @@ export const vocabData = [
     "sentenceMeaning": "週末要去看電影。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "봐요",
+      "봤습니다",
+      "볼 거예요"
+    ]
   },
   {
     "id": 97,
@@ -1064,7 +1444,12 @@ export const vocabData = [
     "sentenceMeaning": "我喜歡聽音樂。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "들어요",
+      "들었습니다",
+      "들을 거예요"
+    ]
   },
   {
     "id": 98,
@@ -1075,7 +1460,12 @@ export const vocabData = [
     "sentenceMeaning": "每天讀書。",
     "category": "日常",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "읽어요",
+      "읽었습니다",
+      "읽을 거예요"
+    ]
   },
   {
     "id": 99,
@@ -1086,7 +1476,12 @@ export const vocabData = [
     "sentenceMeaning": "正在寫信。",
     "category": "日常",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "써요",
+      "썼습니다",
+      "쓸 거예요"
+    ]
   },
   {
     "id": 100,
@@ -1097,7 +1492,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服對我來說太大了。",
     "category": "日常",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "커요",
+      "컸습니다",
+      "클 거예요"
+    ]
   },
   {
     "id": 101,
@@ -2219,7 +2619,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 203,
@@ -2329,7 +2734,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 213,
@@ -2439,7 +2849,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 223,
@@ -2549,7 +2964,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 233,
@@ -2659,7 +3079,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 243,
@@ -2769,7 +3194,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 253,
@@ -2879,7 +3309,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 263,
@@ -2989,7 +3424,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "review",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 273,
@@ -3099,7 +3539,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "learning",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 283,
@@ -3209,7 +3654,12 @@ export const vocabData = [
     "sentenceMeaning": "這件衣服真漂亮。",
     "category": "時尚",
     "status": "learned",
-    "weight": 10
+    "weight": 10,
+    "conjugations": [
+      "예뻐요",
+      "예뻤습니다",
+      "예쁠 거예요"
+    ]
   },
   {
     "id": 293,

@@ -159,10 +159,28 @@ export default function Flashcards({ vocabList, updateVocabStatus, isDarkMode, t
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-800 dark:text-slate-100 tracking-wide text-center">{currentCard.word}</h2>
               <button 
                 onClick={(e) => { e.stopPropagation(); speak(currentCard.word); }}
-                className="w-14 h-14 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center hover:bg-indigo-500/40 transition-colors"
+                className="w-14 h-14 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center hover:bg-indigo-500/40 transition-colors mb-2"
               >
                 <FaVolumeUp size={24} />
               </button>
+
+              {(currentCard.pos === 'verb' || currentCard.pos === 'adjective') && currentCard.conjugations && (
+                <div className="flex gap-2 flex-wrap justify-center mt-4" onClick={(e) => e.stopPropagation()}>
+                  {currentCard.conjugations.map((conj, idx) => {
+                    const labels = ['現在', '過去', '未來'];
+                    return (
+                      <button 
+                        key={idx}
+                        onClick={() => speak(conj)}
+                        className="flex flex-col items-center justify-center bg-white/50 dark:bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-500 transition-colors group"
+                      >
+                        <span className="text-sm md:text-base font-bold text-slate-700 dark:text-slate-300 group-hover:text-indigo-500 dark:group-hover:text-indigo-400">{conj}</span>
+                        <span className="text-[10px] md:text-xs text-slate-500 dark:text-slate-400">{labels[idx] || '變化'}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
             </div>
             <button 
               onClick={(e) => { e.stopPropagation(); setIsFlipped(true); }}

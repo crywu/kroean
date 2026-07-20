@@ -6,14 +6,14 @@ const generateData = () => {
     '日常': [
       { word: '안녕하세요', pos: 'greeting', meaning: '你好', sentence: '안녕하세요! 만나서 반갑습니다.', sentenceMeaning: '你好！很高興見到你。' },
       { word: '감사합니다', pos: 'greeting', meaning: '謝謝', sentence: '도와주셔서 감사합니다.', sentenceMeaning: '謝謝你的幫忙。' },
-      { word: '먹다', pos: 'verb', meaning: '吃', sentence: '저는 지금 밥을 먹고 있습니다.', sentenceMeaning: '我現在正在吃飯。' },
-      { word: '마시다', pos: 'verb', meaning: '喝', sentence: '물을 많이 마셔야 해요.', sentenceMeaning: '必須多喝水。' },
-      { word: '자다', pos: 'verb', meaning: '睡覺', sentence: '어제 너무 늦게 잤어요.', sentenceMeaning: '昨天太晚睡了。' },
-      { word: '보다', pos: 'verb', meaning: '看', sentence: '주말에 영화를 볼 거예요.', sentenceMeaning: '週末要去看電影。' },
-      { word: '듣다', pos: 'verb', meaning: '聽', sentence: '음악을 듣는 것을 좋아해요.', sentenceMeaning: '我喜歡聽音樂。' },
-      { word: '읽다', pos: 'verb', meaning: '讀', sentence: '매일 책을 읽습니다.', sentenceMeaning: '每天讀書。' },
-      { word: '쓰다', pos: 'verb', meaning: '寫', sentence: '편지를 쓰고 있어요.', sentenceMeaning: '正在寫信。' },
-      { word: '크다', pos: 'adjective', meaning: '大的', sentence: '이 옷은 저에게 너무 커요.', sentenceMeaning: '這件衣服對我來說太大了。' },
+      { word: '먹다', pos: 'verb', meaning: '吃', sentence: '저는 지금 밥을 먹고 있습니다.', sentenceMeaning: '我現在正在吃飯。', conjugations: ['먹어요', '먹었습니다', '먹을 거예요'] },
+      { word: '마시다', pos: 'verb', meaning: '喝', sentence: '물을 많이 마셔야 해요.', sentenceMeaning: '必須多喝水。', conjugations: ['마셔요', '마셨습니다', '마실 거예요'] },
+      { word: '자다', pos: 'verb', meaning: '睡覺', sentence: '어제 너무 늦게 잤어요.', sentenceMeaning: '昨天太晚睡了。', conjugations: ['자요', '잤습니다', '잘 거예요'] },
+      { word: '보다', pos: 'verb', meaning: '看', sentence: '주말에 영화를 볼 거예요.', sentenceMeaning: '週末要去看電影。', conjugations: ['봐요', '봤습니다', '볼 거예요'] },
+      { word: '듣다', pos: 'verb', meaning: '聽', sentence: '음악을 듣는 것을 좋아해요.', sentenceMeaning: '我喜歡聽音樂。', conjugations: ['들어요', '들었습니다', '들을 거예요'] },
+      { word: '읽다', pos: 'verb', meaning: '讀', sentence: '매일 책을 읽습니다.', sentenceMeaning: '每天讀書。', conjugations: ['읽어요', '읽었습니다', '읽을 거예요'] },
+      { word: '쓰다', pos: 'verb', meaning: '寫', sentence: '편지를 쓰고 있어요.', sentenceMeaning: '正在寫信。', conjugations: ['써요', '썼습니다', '쓸 거예요'] },
+      { word: '크다', pos: 'adjective', meaning: '大的', sentence: '이 옷은 저에게 너무 커요.', sentenceMeaning: '這件衣服對我來說太大了。', conjugations: ['커요', '컸습니다', '클 거예요'] },
     ],
     '旅遊': [
       { word: '여행', pos: 'noun', meaning: '旅遊', sentence: '이번 주말에 부산으로 여행을 갑니다.', sentenceMeaning: '這個週末要去釜山旅遊。' },
@@ -29,7 +29,7 @@ const generateData = () => {
     ],
     '時尚': [
       { word: '옷', pos: 'noun', meaning: '衣服', sentence: '새로운 옷을 사고 싶어요.', sentenceMeaning: '我想買新衣服。' },
-      { word: '예쁘다', pos: 'adjective', meaning: '漂亮的', sentence: '이 옷이 정말 예쁘네요.', sentenceMeaning: '這件衣服真漂亮。' },
+      { word: '예쁘다', pos: 'adjective', meaning: '漂亮的', sentence: '이 옷이 정말 예쁘네요.', sentenceMeaning: '這件衣服真漂亮。', conjugations: ['예뻐요', '예뻤습니다', '예쁠 거예요'] },
       { word: '바지', pos: 'noun', meaning: '褲子', sentence: '청바지를 자주 입어요.', sentenceMeaning: '我經常穿牛仔褲。' },
       { word: '치마', pos: 'noun', meaning: '裙子', sentence: '오늘 예쁜 치마를 입었어요.', sentenceMeaning: '今天穿了漂亮的裙子。' },
       { word: '신발', pos: 'noun', meaning: '鞋子', sentence: '신발이 아주 편해요.', sentenceMeaning: '鞋子很舒服。' },
@@ -62,14 +62,15 @@ const generateData = () => {
       const baseItem = baseList[i % baseList.length];
       vocabData.push({
         id: vocabId++,
-        word: baseItem.word, // Removed the number suffix
+        word: baseItem.word,
         pos: baseItem.pos,
         meaning: baseItem.meaning,
         sentence: baseItem.sentence,
         sentenceMeaning: baseItem.sentenceMeaning,
         category: category,
         status: statuses[i % 3],
-        weight: 10
+        weight: 10,
+        ...(baseItem.conjugations && { conjugations: baseItem.conjugations })
       });
     }
   }
