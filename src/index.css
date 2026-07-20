@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #6366f1;
+  --color-primary-hover: #4f46e5;
+  --color-secondary: #ec4899;
+}
+
+@layer base {
+  :root {
+    --bg-color: #f8fafc;
+    --text-primary: #1e293b;
+    --grad-1: hsla(253, 30%, 90%, 1);
+    --grad-2: hsla(225, 30%, 85%, 1);
+    --grad-3: hsla(339, 30%, 90%, 1);
+  }
+
+  .dark {
+    --bg-color: #0f172a;
+    --text-primary: #f8fafc;
+    --grad-1: hsla(253, 16%, 7%, 1);
+    --grad-2: hsla(225, 39%, 30%, 1);
+    --grad-3: hsla(339, 49%, 30%, 1);
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    background-image: 
+      radial-gradient(at 0% 0%, var(--grad-1) 0, transparent 50%), 
+      radial-gradient(at 50% 0%, var(--grad-2) 0, transparent 50%), 
+      radial-gradient(at 100% 0%, var(--grad-3) 0, transparent 50%);
+    background-attachment: fixed;
+    @apply font-sans antialiased min-h-screen overflow-x-hidden transition-colors duration-500;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-slate-200/50 dark:border-slate-700/50 shadow-xl rounded-2xl transition-colors duration-500;
+  }
+
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg font-medium transition-all shadow-lg hover:shadow-indigo-500/30 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg font-medium transition-all shadow-lg active:scale-95;
+  }
+  
+  .btn-outline {
+    @apply px-4 py-2 border border-slate-600 hover:border-slate-500 hover:bg-slate-800/50 text-slate-300 rounded-lg font-medium transition-all active:scale-95;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
