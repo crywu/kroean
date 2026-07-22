@@ -57,10 +57,10 @@ export default function Flashcards({ vocabList, updateVocabStatus, isDarkMode, t
 
     if (action === 'learned') {
       newStatus = 'learned';
-      newWeight = 2; // Low frequency
+      newWeight = 0.5; // Extremely low frequency
     } else if (action === 'review') {
       newStatus = 'review';
-      newWeight = 20; // High frequency
+      newWeight = 100; // Extremely high frequency
     }
     // 'skip' does nothing to weight
 
@@ -184,9 +184,9 @@ export default function Flashcards({ vocabList, updateVocabStatus, isDarkMode, t
             </div>
             <button 
               onClick={(e) => { e.stopPropagation(); setIsFlipped(true); }}
-              className="absolute top-4 right-4 flex items-center gap-2 text-slate-400 hover:text-slate-200"
+              className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 px-6 py-2.5 bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 rounded-full font-bold shadow-sm hover:bg-indigo-100 dark:hover:bg-indigo-500/20 transition-all border border-indigo-200 dark:border-indigo-500/30 hover:scale-105"
             >
-              <FaSyncAlt /> <span>翻面</span>
+              <FaSyncAlt /> <span>翻面查看</span>
             </button>
           </div>
 
@@ -194,27 +194,27 @@ export default function Flashcards({ vocabList, updateVocabStatus, isDarkMode, t
           <div className="absolute w-full h-full backface-hidden glass-panel rotate-y-180 flex flex-col p-8 bg-white/90 dark:bg-slate-800/90">
              <button 
               onClick={(e) => { e.stopPropagation(); setIsFlipped(false); }}
-              className="absolute top-4 right-4 flex items-center gap-2 text-slate-400 hover:text-slate-200"
+              className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 px-6 py-2.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-full font-bold shadow-sm hover:bg-slate-200 dark:hover:bg-slate-700 transition-all border border-slate-200 dark:border-slate-600 hover:scale-105"
             >
               <FaSyncAlt /> <span>翻回正面</span>
             </button>
             
-            <div className="flex-1 flex flex-col justify-center w-full mt-4">
-              <h3 className="text-2xl md:text-3xl font-bold text-center text-pink-400 mb-6 md:mb-8">{currentCard.meaning}</h3>
+            <div className="flex-1 flex flex-col justify-center w-full mt-4 pb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-center text-pink-500 dark:text-pink-400 mb-6 md:mb-8 tracking-wide">{currentCard.meaning}</h3>
               
               <div className="bg-slate-100 dark:bg-slate-900/50 p-4 rounded-xl border border-slate-200 dark:border-slate-700">
                 <div className="flex justify-between items-start mb-2">
-                  <p className="text-base md:text-lg text-slate-800 dark:text-slate-200">{currentCard.sentence}</p>
+                  <p className="text-lg md:text-xl font-medium text-slate-800 dark:text-slate-200">{currentCard.sentence}</p>
                   <button 
                     onClick={(e) => { e.stopPropagation(); speak(currentCard.sentence); }}
                     className="text-indigo-400 hover:text-indigo-300 p-1 shrink-0 ml-2"
                   >
-                    <FaVolumeUp />
+                    <FaVolumeUp size={20} />
                   </button>
                 </div>
                 
                 {showTranslation ? (
-                  <p className="text-slate-600 dark:text-slate-400 text-sm mt-3 pt-3 border-t border-slate-300 dark:border-slate-700/50">
+                  <p className="text-slate-700 dark:text-slate-300 text-base md:text-lg mt-3 pt-3 border-t border-slate-300 dark:border-slate-700/50">
                     {currentCard.sentenceMeaning}
                   </p>
                 ) : (

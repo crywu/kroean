@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaVolumeUp } from 'react-icons/fa';
 
-export default function Vocabulary({ vocabList }) {
+export default function Vocabulary({ vocabList, resetProgress }) {
   const [filter, setFilter] = useState('全部');
   const categories = ['全部', '日常', '旅遊', '時尚', '漢字詞'];
 
@@ -39,7 +39,18 @@ export default function Vocabulary({ vocabList }) {
         <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-400">
           單字管理
         </h2>
-        <div className="relative">
+        <div className="flex flex-wrap items-center gap-3 md:gap-4">
+          <button
+            onClick={() => {
+              if (window.confirm('確定要重置所有單字的學習進度嗎？所有單字將恢復為「學習中」。')) {
+                resetProgress();
+              }
+            }}
+            className="px-4 py-2 bg-rose-50 dark:bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30 rounded-xl hover:bg-rose-100 dark:hover:bg-rose-500/20 transition-colors font-medium text-sm shadow-sm"
+          >
+            重置進度
+          </button>
+          <div className="relative">
           <select
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
@@ -53,6 +64,7 @@ export default function Vocabulary({ vocabList }) {
             <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
               <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
             </svg>
+          </div>
           </div>
         </div>
       </div>
@@ -71,11 +83,37 @@ export default function Vocabulary({ vocabList }) {
                     <FaVolumeUp />
                   </button>
                 </div>
-                <span className="text-sm text-slate-500 dark:text-slate-400 inline-block mt-1">{getPosChinese(vocab.pos)} • {vocab.meaning}</span>
+                <div className="flex items-center gap-2 mt-2">
+                  <span className="px-2 py-1 text-xs font-semibold rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700">
+                    {getPosChinese(vocab.pos)}
+                  </span>
+                  <span className="text-lg font-bold text-slate-700 dark:text-slate-200">
+                    {vocab.meaning}
+                  </span>
+                </div>
               </div>
               {getStatusBadge(vocab.status)}
             </div>
             
+            {/* Conjugations */}
+            {(vocab.pos === 'verb' || vocab.pos === 'adjective') && vocab.conjugations && (
+              <div className="flex gap-2 flex-wrap mb-4 mt-2">
+                {vocab.conjugations.map((conj, idx) => {
+                  const labels = ['現在', '過去', '未來'];
+                  return (
+                    <button 
+                      key={idx}
+                      onClick={(e) => { e.stopPropagation(); speak(conj); }}
+                      className="flex flex-col items-center justify-center bg-white/50 dark:bg-slate-800/50 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-indigo-400 dark:hover:border-indigo-500 transition-colors group shadow-sm"
+                    >
+                      <span className="text-sm font-bold text-slate-700 dark:text-slate-300 group-hover:text-indigo-500 dark:group-hover:text-indigo-400">{conj}</span>
+                      <span className="text-[10px] text-slate-500 dark:text-slate-400">{labels[idx] || '變化'}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+
             <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-700/50 opacity-80 group-hover:opacity-100 transition-opacity">
               <div className="flex justify-between items-start">
                 <p className="text-sm text-slate-700 dark:text-slate-300 font-medium">{vocab.sentence}</p>
@@ -86,7 +124,7 @@ export default function Vocabulary({ vocabList }) {
                   <FaVolumeUp size={14} />
                 </button>
               </div>
-              <p className="text-xs text-slate-500 mt-1">{vocab.sentenceMeaning}</p>
+              <p className="text-sm md:text-base text-slate-600 dark:text-slate-400 mt-1.5">{vocab.sentenceMeaning}</p>
             </div>
           </div>
         ))}

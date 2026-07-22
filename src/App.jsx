@@ -21,10 +21,15 @@ function App() {
     // Initialize vocab list, overriding with saved progress if it exists
     const listWithWeights = initialVocabData.map(v => {
       const savedItem = savedProgress[v.id];
+      const status = savedItem?.status || v.status || 'learning';
+      let weight = 10;
+      if (status === 'learned') weight = 0.5;
+      if (status === 'review') weight = 100;
+
       return {
         ...v,
-        status: savedItem?.status || v.status || 'learning',
-        weight: savedItem?.weight || 10
+        status,
+        weight
       };
     });
     setVocabList(listWithWeights);
@@ -60,6 +65,11 @@ function App() {
     });
   };
 
+  const resetProgress = () => {
+    localStorage.removeItem('koreanLearningProgress');
+    setVocabList(prev => prev.map(v => ({ ...v, status: 'learning', weight: 10 })));
+  };
+
   return (
     <Router>
       <div className="flex flex-col md:flex-row min-h-screen text-slate-800 dark:text-slate-200 transition-colors duration-500">
@@ -67,7 +77,7 @@ function App() {
         <main className="flex-1 md:ml-64 w-full">
           <Routes>
             <Route path="/" element={<Flashcards vocabList={vocabList} updateVocabStatus={updateVocabStatus} isDarkMode={isDarkMode} toggleTheme={toggleTheme} />} />
-            <Route path="/vocabulary" element={<Vocabulary vocabList={vocabList} />} />
+            <Route path="/vocabulary" element={<Vocabulary vocabList={vocabList} resetProgress={resetProgress} />} />
             <Route path="/grammar" element={<Grammar />} />
           </Routes>
         </main>
