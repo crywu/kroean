@@ -6,7 +6,6 @@ export default function Flashcards({ vocabList, updateVocabStatus, isDarkMode, t
   const [filter, setFilter] = useState('全部');
   const [currentCard, setCurrentCard] = useState(null);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [showTranslation, setShowTranslation] = useState(false);
 
   const categories = ['全部', '日常', '旅遊', '時尚', '漢字詞'];
 
@@ -69,7 +68,6 @@ export default function Flashcards({ vocabList, updateVocabStatus, isDarkMode, t
     }
 
     setIsFlipped(false);
-    setShowTranslation(false);
     setTimeout(() => {
       // Pick next card from the updated list
       // Since updateVocabStatus is async and triggers re-render, 
@@ -229,18 +227,9 @@ export default function Flashcards({ vocabList, updateVocabStatus, isDarkMode, t
                   </button>
                 </div>
                 
-                {showTranslation ? (
-                  <p className="text-slate-700 dark:text-slate-300 text-base md:text-lg mt-3 pt-3 border-t border-slate-300 dark:border-slate-700/50">
-                    {currentCard.sentenceMeaning}
-                  </p>
-                ) : (
-                  <button 
-                    onClick={(e) => { e.stopPropagation(); setShowTranslation(true); }}
-                    className="mt-3 text-sm text-slate-500 hover:text-slate-300 underline underline-offset-4"
-                  >
-                    顯示翻譯
-                  </button>
-                )}
+                <p className="text-slate-700 dark:text-slate-300 text-base md:text-lg mt-3 pt-3 border-t border-slate-300 dark:border-slate-700/50">
+                  {currentCard.sentenceMeaning}
+                </p>
               </div>
             </div>
           </div>
