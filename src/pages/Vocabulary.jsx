@@ -33,8 +33,8 @@ export default function Vocabulary({ vocabList, resetProgress }) {
     }
   };
 
-  const learnedCount = (vocabList || []).filter(v => v.status === 'learned').length;
-  const reviewCount = (vocabList || []).filter(v => v.status === 'review').length;
+  const learnedCount = filteredVocab.filter(v => v.status === 'learned').length;
+  const reviewCount = filteredVocab.filter(v => v.status === 'review').length;
 
   return (
     <div className="p-4 md:p-8 max-w-6xl mx-auto pb-24 md:pb-8">
