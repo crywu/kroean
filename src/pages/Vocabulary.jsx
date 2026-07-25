@@ -33,6 +33,9 @@ export default function Vocabulary({ vocabList, resetProgress }) {
     }
   };
 
+  const learnedCount = (vocabList || []).filter(v => v.status === 'learned').length;
+  const reviewCount = (vocabList || []).filter(v => v.status === 'review').length;
+
   return (
     <div className="p-4 md:p-8 max-w-6xl mx-auto pb-24 md:pb-8">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
@@ -40,6 +43,14 @@ export default function Vocabulary({ vocabList, resetProgress }) {
           單字管理
         </h2>
         <div className="flex flex-wrap items-center gap-3 md:gap-4">
+          <div className="flex items-center gap-2 mr-2 md:mr-4">
+            <span className="px-3 py-1.5 text-sm font-medium rounded-lg bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-500/30">
+              已學會: {learnedCount}
+            </span>
+            <span className="px-3 py-1.5 text-sm font-medium rounded-lg bg-rose-100 dark:bg-rose-500/20 text-rose-700 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30">
+              需複習: {reviewCount}
+            </span>
+          </div>
           <button
             onClick={() => {
               if (window.confirm('確定要重置所有單字的學習進度嗎？所有單字將恢復為「學習中」。')) {
